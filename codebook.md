@@ -1,6 +1,6 @@
 # Code Book
 
-The dataset set has 10299 observations with 68 variables. The variables include 66 of mean and standard deviation variables and remaining 2 are subject and activity. 
+The dataset set has 180 observations with 68 variables. The variables include 66 average of mean and standard deviation variables and remaining 2 are subject and activity. 
 
 List of variables in the dataset generated using memisc library
 ========================================================================================================
