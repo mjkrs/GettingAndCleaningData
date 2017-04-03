@@ -83,8 +83,9 @@ names(subject_combin)<-c("subject")
 
 ######## 5 #########################
 cleanedData<-cbind(subject_combin,y_combin,match)
-
-write.table(cleanedData, "mergedcleaned.txt", row.name=FALSE)
-
+averageData<-aggregate(cleanedData[, 3:68], list(cleanedData$subject,cleanedData$activity ), mean)
+names(averageData)[1]<-"subject"
+names(averageData)[2]<-"activity"
+write.table(averageData, "mergedcleaned.txt", row.name=FALSE)
 
 
